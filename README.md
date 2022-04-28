@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <img src="[images/icon.png](https://icon-library.com/images/free-movies-icon/free-movies-icon-16.jpg)" alt="Javascript" width="200">
+  <img src="https://icon-library.com/images/free-movies-icon/free-movies-icon-16.jpg" alt="Find you Movie" width="200">
   <br>
 Find you Movie  <br>
 </h1>
