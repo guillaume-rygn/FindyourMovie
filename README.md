@@ -5,7 +5,7 @@
   <br>
 Find you Movie  <br>
 </h1>
-<h4 align="center">Recherche tes films préférés de manière dynamique grâce à l'API OMDB et l'intersection observer</h4>
+<h4 align="center">Recherche tes films préférés de manière dynamique grâce à l'API OMDb et l'intersection observer</h4>
 <br>
 
 ![Find you Movie](images/banner.png)
