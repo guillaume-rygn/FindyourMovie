@@ -154,6 +154,8 @@ const observer = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
       if(entry.isIntersecting){
+        const lazyImage = entry.target
+        lazyImage.src = lazyImage.dataset.src
         entry.target.classList.add("show");
       }
     })
