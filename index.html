@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Find your movie</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet"> 
+  </head>
+
+  <body>
+
+    <div id="filter"></div>
+
+    <div id="popup">
+        <img src="https://www.pearson.fr/resources/titles/27440100124920/images/27440100124920L.jpg" id="bigposter">
+        <div id="infopop">
+            <h2 id="title">${movie.Title}</h2>
+            <p id="year">${movie.Year}</p>
+            <h3 id="description">Read More</h3>
+            <img src="http://cdn.onlinewebfonts.com/svg/img_267727.png" id="close">
+        </div>     
+    </div>
+
+    <div class="main">
+      <h1>Find your Movie</h1>
+      <div class="search">
+        <input type="text" id="input" placeholder="search movie">
+        <img src="https://static.thenounproject.com/png/1152691-200.png" id="searchbtn">
+      </div>
+    </div>
+    <div id="result">   
+
+    </div>
+
+
+
+    <script src="apikey.js"></script>
+    <script src="script.js"></script>
+  </body>
+
+</html>

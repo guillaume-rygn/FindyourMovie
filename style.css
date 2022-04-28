@@ -1,0 +1,190 @@
+body{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1{
+  color: #5b5bcc;
+}
+
+h3{
+  margin: 7px 0;
+}
+
+h2{
+  color: #5b5bcc;
+  margin: 30px 0 20px 0;
+}
+
+.main{
+  width: 100vw;
+  display: block;
+  background-color: rgb(243, 243, 243);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  padding: 0px 20px 20px 40px;
+  box-shadow: 0px 5px 10px -8px #000000;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  border: 1px solid #c0c0c0;
+  width: fit-content;
+  padding: 0 15px 0 25px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+input{
+  border: none;
+  padding: 8px 0;
+}
+
+input:focus{
+  outline: none;
+}
+
+.poster{
+  height: 150px;
+}
+
+#searchbtn{
+  cursor: pointer;
+  filter: grayscale(1);
+  margin-left: 5px;
+  height: 22px ;
+  vertical-align: baseline;
+}
+
+#result{
+  position: absolute;
+  height: calc(100vh - 145px);
+  width: 100vw;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+.resultmovie{
+  display: flex;
+  align-items: center;
+  border: 2px solid #dddddd;
+  padding: 15px 25px 15px 25px;
+  border-radius: 15px;
+  margin: 30px 20px;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 150ms;
+}
+
+.info{
+  margin-left: 40px;
+}
+
+.read {
+  border: none;
+  border-radius: 20px;
+  background-color: #5b5bcc;
+  padding: 8px 25px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.resultmovie.show{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#end{
+  text-align: center;
+}
+
+#load{
+  width: 40px;
+  margin-bottom: 50px;
+}
+
+#filter{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000a1;
+  z-index: 1000;
+  display: none;
+  animation-fill-mode: forwards;
+}
+
+#popup{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  z-index: 1001;
+  border-radius: 15px;
+  gap: 30px;
+  width: clamp(700px,60vw,1000px);
+  display: flex;
+  align-items: top;
+  border: 2px solid #dddddd;
+  padding: 15px 30px 15px 25px;
+  margin: 30px 20px;
+  display: none;
+  animation-fill-mode: forwards;
+}
+
+#infopop{
+  position: relative;
+  width: 100%;
+}
+
+#close{
+  position: absolute;
+  top: -2px;
+  right: -15px;
+  width: 20px;
+  z-index: 1200;
+  cursor: pointer;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -30%);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  100%{
+    opacity: 0;
+    transform: translate(-50%, -30%);
+  }
+}
+
+@keyframes fadeinfilter {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeoutfilter {
+  0% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
