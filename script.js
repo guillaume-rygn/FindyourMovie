@@ -112,7 +112,7 @@ const textTransform = (element) =>{
                       end.remove();
                       resultDisplay.insertAdjacentHTML("beforeend", `
                       <div>
-                        <p style="display:block; text-align:center; margin:50px 0">Fin de la recherche, ${max} recherches en tout trouvées.</p>
+                        <p style="display:block; text-align:center; margin:50px 0">Fin de la recherche, <span class="color">${max} recherches</span> en tout trouvées.</p>
                       </div>`);
                     }
                   })
