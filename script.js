@@ -58,18 +58,33 @@ const textTransform = (element) =>{
               b = 0;
               response.Search.forEach(movie => { 
                 i ++;
-                resultDisplay.insertAdjacentHTML("beforeend", `
-                <div class="resultmovie">
-                  <div>
-                    <img src="${movie.Poster}" class="poster">
+                if(movie.Poster === "N/A"){
+                  resultDisplay.insertAdjacentHTML("beforeend", `
+                  <div class="resultmovie">
+                    <div>
+                      <img src="https://www.reelviews.net/resources/img/default_poster.jpg" class="poster">
+                    </div>
+                    <div class="info">
+                      <h3>${movie.Title}</h3>
+                      <p>${movie.Year}</p>
+                      <button id="${movie.imdbID}" class="read">Read More</button>
+                    </div>
                   </div>
-                  <div class="info">
-                    <h3>${movie.Title}</h3>
-                    <p>${movie.Year}</p>
-                    <button id="${movie.imdbID}" class="read">Read More</button>
+                  `);
+                } else {
+                  resultDisplay.insertAdjacentHTML("beforeend", `
+                  <div class="resultmovie">
+                    <div>
+                      <img src="${movie.Poster}" class="poster">
+                    </div>
+                    <div class="info">
+                      <h3>${movie.Title}</h3>
+                      <p>${movie.Year}</p>
+                      <button id="${movie.imdbID}" class="read">Read More</button>
+                    </div>
                   </div>
-                </div>
-                `);
+                  `);
+                }
               });
               resultDisplay.insertAdjacentHTML("beforeend", `
                 <div id="end">
