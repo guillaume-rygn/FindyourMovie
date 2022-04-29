@@ -14,6 +14,8 @@ Find you Movie  <br>
 
 Le site est en live ici 👉 [Find your Movie](https://guillaume-rygn.github.io/FindyourMovie/)
 
+/!\ Pour utiliser le site merci de desactiver la protection de la page.
+
 ## Technologies utilisées ⚙️
 
 <p align="left">Pour ce programme les technologies suivantes ont été utilisé : <br>
