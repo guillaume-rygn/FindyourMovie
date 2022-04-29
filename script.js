@@ -37,7 +37,7 @@ const textTransform = (element) =>{
 
 
       function showmovie(){
-        fetch(`http://www.omdbapi.com/?s=${value}&page=${page}&apikey=${key}`)
+        fetch(`https://www.omdbapi.com/?s=${value}&page=${page}&apikey=${key}`)
           .then((response) => {
             console.log("step1");
             return response.json();
@@ -168,7 +168,7 @@ const observer = new IntersectionObserver(
 
 window.addEventListener("click", function(e){
   if(e.target.localName === "button"){
-    fetch(`http://www.omdbapi.com/?i=${e.target.id}&apikey=${key}`)
+    fetch(`https://www.omdbapi.com/?i=${e.target.id}&apikey=${key}`)
     .then((response) => {
       return response.json();
     })
