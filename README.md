@@ -1,14 +1,14 @@
 
 <h1 align="center">
   <br>
-  <img src="https://icon-library.com/images/free-movies-icon/free-movies-icon-16.jpg" alt="Find you Movie" width="200">
+  <img src="https://icon-library.com/images/free-movies-icon/free-movies-icon-16.jpg" alt="Find your Movie" width="200">
   <br>
-Find you Movie  <br>
+Find your Movie  <br>
 </h1>
 <h4 align="center">Recherche tes films préférés de manière dynamique grâce à l'API OMDb et l'intersection observer</h4>
 <br>
 
-![Find you Movie](images/banner.png)
+![Find your Movie](images/banner.png)
 
 ## WEB version 🌐
 
